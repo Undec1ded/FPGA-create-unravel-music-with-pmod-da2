@@ -2,7 +2,7 @@
 
 module spi_master#(
     parameter bit_data = 1024,
-    parameter frequency_25MGz = 25000000,
+    parameter frequency_25MGz = 25000000
     )(
 input clk,
 input logic [5 : 0] note_state,
@@ -16,27 +16,27 @@ output logic sclk
 
 // frequency notes
 
-localparameter frequency_A1 = 440, 
-localparameter frequency_A2 = 880,
-localparameter frequency_B1 = 494,
-localparameter frequency_C1 = 523,
-localparameter frequency_D1 = 294,
-localparameter frequency_E2 = 659,
-localparameter frequency_G1 = 392,
-localparameter frequency_G2 = 784,
-localparameter frequency_F1 = 349,
-localparameter frequency_F2h = 740,
+localparameter frequency_A1 = 440;
+localparameter frequency_A2 = 880;
+localparameter frequency_B1 = 494;
+localparameter frequency_C1 = 523;
+localparameter frequency_D1 = 294;
+localparameter frequency_E2 = 659;
+localparameter frequency_G1 = 392;
+localparameter frequency_G2 = 784;
+localparameter frequency_F1 = 349;
+localparameter frequency_F2h = 740;
     
-localparameter frequency_A3 = 1720,
-localparameter frequency_A4 = 3440,
-localparameter frequency_B3 = 1975,
-localparameter frequency_C4 = 2093,
-localparameter frequency_D3 = 1174,
-localparameter frequency_E4 = 2637,
-localparameter frequency_G3 = 1568,
-localparameter frequency_G4 = 3136,
-localparameter frequency_F3 = 1396,
-localparameter frequency_F4h = 2960
+localparameter frequency_A3 = 1720;
+localparameter frequency_A4 = 3440;
+localparameter frequency_B3 = 1975;
+localparameter frequency_C4 = 2093;
+localparameter frequency_D3 = 1174;
+localparameter frequency_E4 = 2637;
+localparameter frequency_G3 = 1568;
+localparameter frequency_G4 = 3136;
+localparameter frequency_F3 = 1396;
+localparameter frequency_F4h = 296;
 
 reg [bit_data - 1 : 0] random_data = data;
 
