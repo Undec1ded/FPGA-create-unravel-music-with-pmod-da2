@@ -4528,7 +4528,7 @@ always@(posedge time_driver) begin
         endcase  
     end 
     //toxic
-    else if (sw_state == 4'b0101) begin
+    else if (sw_state == 4'b0110) begin
         case (counter_sec) 
             2'b11: note = Ah2_note;
             8'b10010110: note = 0;
