@@ -43,7 +43,7 @@ module spi_master#(
      
     )(
 input clk,
-input logic [5 : 0] note_state,
+input logic [6 : 0] note_state,
 input button_action,
 input logic [bit_data - 1 : 0] data,
 

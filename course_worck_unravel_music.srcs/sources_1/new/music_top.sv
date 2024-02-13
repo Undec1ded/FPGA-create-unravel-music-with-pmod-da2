@@ -15,7 +15,7 @@ module music_top#(
 );
     
 logic [bits_data_out  - 1 : 0] data;
-wire [5 : 0] note_state_wire;
+wire [6 : 0] note_state_wire;
 
 ram_sinusoid ram_sinusoid(.clk(clk), .data(data));
 unravel unravel(.clk(clk), .button_action(button_action), .note(note_state_wire), .sw(sw));
